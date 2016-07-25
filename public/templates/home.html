@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<ul>
+	<li ng-repeat="msg in msgs track by $index">{{msg.name}} : {{msg.msg}}</li>
+
+</ul><br><br>
+<input type="text" ng-model="msg"></input>
+
+<button ng-click="send()">send</button><br><br>
+<h3>online users</h3>
+<ul>
+	<li ng-repeat="user in users track by $index">{{user}}</li>
+
+</ul>
+
+
+
+
+
+
+</body>
+</html>
